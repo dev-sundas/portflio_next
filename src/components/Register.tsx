@@ -11,11 +11,12 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 
 type Props = {};
+const form = useForm<registerType>({
+  resolver: zodResolver(registerSchema),
+});
 
-export default function register({}: Props) {
-  const form = useForm<registerType>({
-    resolver: zodResolver(registerSchema),
-  });
+export default function Register({ }: Props) {
+
   const OnSubmit = (data: registerType) => {
     console.log(data);
     alert("sucessfully registerd");

@@ -26,12 +26,12 @@ export default function ClientSay({ clients }: Props) {
           <Carousel opts={{ loop: true }} plugins={[Autoplay({ delay: 3000 })]}>
             <CarouselContent>
               {clients.map((client) => (
-                <CarouselItem className=" basis:[100%] lg:basis-1/2 md:p-12 md:basis-[85%]">
+                <CarouselItem className=" basis:[100%] lg:basis-1/2 md:p-12 md:basis-[85%]" key={client.id}>
                   <Card
 
                     className="rounded-none p-4  shadow-white/60 bg-transparent border-none shadow-lg lg:w-[90%]"
                   >
-                    <CardContent className="flex flex-col md:flex-row gap-6" key={client.id}>
+                    <CardContent className="flex flex-col md:flex-row gap-6">
                       <Image
                         src={client.image_url}
                         alt={""}
