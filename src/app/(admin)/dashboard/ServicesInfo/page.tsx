@@ -1,4 +1,4 @@
-import ServicesForm from "@/components/ServicesForm";
+import ServicesForm from "@/components/ServiceForm";
 import React from "react";
 
 type Props = {};

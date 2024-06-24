@@ -10,7 +10,7 @@ import { Card, CardContent } from "./ui/card";
 
 type Props = {};
 
-export default function servicesForm({}: Props) {
+export default function ServiceForm({ }: Props) {
   const form = useForm<ServiceFormType>({
     resolver: zodResolver(ServiceSchema),
   });
