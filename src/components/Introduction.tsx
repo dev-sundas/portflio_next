@@ -4,7 +4,7 @@ import image from "../../public/images/about_image.jpg";
 import { Button } from "./ui/button";
 type Props = {};
 
-export default function Intoducation({}: Props) {
+export default function Intoducation({ }: Props) {
   return (
     <div className="mt-24">
       <div className=" lg:w-[90%]  md:m-auto md:px-none px-4  xl:max-w-[1140px] xl:m-auto ">
@@ -21,7 +21,7 @@ export default function Intoducation({}: Props) {
 
           <div>
             <h1 className="font-extrabold text-[32px] tracking-wide left-3">
-              LET'S <br /> INTRODUCE ABOUT <br />
+              LET&apos;S <br /> INTRODUCE ABOUT <br />
               MYSELF
             </h1>
             <div className="text-[white] leading-relaxed tracking-wide mt-4">

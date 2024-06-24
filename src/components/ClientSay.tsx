@@ -19,7 +19,7 @@ export default function ClientSay({ clients }: Props) {
           <p className="text-white mb-6">
             Is give may shall likeness made yielding spirit a itself togeth
             created after sea is in beast
-            <br /> beginning signs open god you're gathering ithe
+            <br /> beginning signs open god you&apos;re gathering ithe
           </p>
         </div>
         <div>
@@ -28,10 +28,10 @@ export default function ClientSay({ clients }: Props) {
               {clients.map((client) => (
                 <CarouselItem className=" basis:[100%] lg:basis-1/2 md:p-12 md:basis-[85%]">
                   <Card
-                    key={client.id}
+
                     className="rounded-none p-4  shadow-white/60 bg-transparent border-none shadow-lg lg:w-[90%]"
                   >
-                    <CardContent className="flex flex-col md:flex-row gap-6 ">
+                    <CardContent className="flex flex-col md:flex-row gap-6" key={client.id}>
                       <Image
                         src={client.image_url}
                         alt={""}

@@ -21,7 +21,7 @@ import { Checkbox } from "./ui/checkbox";
 
 type Props = {};
 
-export default function login_form({ }: Props) {
+export default function loginform({ }: Props) {
   const [open, setopen] = useState(false);
   const form = useForm<loginType>({
     resolver: zodResolver(loginSchema),
@@ -98,7 +98,7 @@ export default function login_form({ }: Props) {
                     Login
                   </Button>
                   <p className="mt-7 text-center">
-                    Don't have an account?
+                    Don&apos;t have an account?
                     <Link href={"/form"} className="text-[#854fee]">
                       Signup
                     </Link>
@@ -112,8 +112,8 @@ export default function login_form({ }: Props) {
         <div className="mt-2">
           <div
             className={`${open
-                ? "absolute left-[55px] right-0"
-                : "absolute left-[560px] right-0"
+              ? "absolute left-[55px] right-0"
+              : "absolute left-[560px] right-0"
               } text-white bg-[grey] w-[45%]`}
           >
             <div className="bg-[grey]">
