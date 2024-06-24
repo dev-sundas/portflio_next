@@ -14,7 +14,7 @@ export default function Services({ services }: Props) {
           <p className="text-white">
             Is give may shall likeness made yielding spirit a itself togeth
             created after sea is in beast
-            <br /> beginning signs open god you're gathering ithe
+            <br /> beginning signs open god you&apos;re gathering ithe
           </p>
         </div>
         <div className="grid gap-10 lg:grid-cols-4 md:grid-cols-2 shadow-xl">

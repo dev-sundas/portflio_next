@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 type Props = {};
 
-export default function Update({}: Props) {
+export default function Update({ }: Props) {
   return (
     <div className="relative">
       <div className="h-[50vh] w-full"></div>

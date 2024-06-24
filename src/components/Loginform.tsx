@@ -21,12 +21,13 @@ import { Checkbox } from "./ui/checkbox";
 
 type Props = {};
 
-const [open, setopen] = useState(false);
-const form = useForm<loginType>({
-  resolver: zodResolver(loginSchema),
-});
 
-export default function loginform({ }: Props) {
+
+export default function Loginform({ }: Props) {
+  const [open, setopen] = useState(false);
+  const form = useForm<loginType>({
+    resolver: zodResolver(loginSchema),
+  });
 
   const OnSubmit = (data: loginType) => {
     console.log(data);

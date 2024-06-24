@@ -12,7 +12,7 @@ import { postPersonalData } from "@/server/personalinfo";
 
 type Props = {};
 
-export default function AdminForm({}: Props) {
+export default function PersonalForm({ }: Props) {
   const form = useForm<PersonalFormType>({
     resolver: zodResolver(PersonalSchema),
   });

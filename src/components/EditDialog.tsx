@@ -10,7 +10,7 @@ import {
 
 type Props = { open: boolean; setopen: (open: boolean) => void };
 
-export default function MyDialog({ open, setopen }: Props) {
+export default function EditDialog({ open, setopen }: Props) {
   return (
     <div>
       <Dialog open={open} onOpenChange={setopen}>
