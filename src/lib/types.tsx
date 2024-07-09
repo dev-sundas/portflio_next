@@ -54,9 +54,9 @@ export type registerType = z.infer<typeof registerSchema>;
 
 export const PersonalSchema = z.object({
   name: z.string(),
-  postion: z.string(),
+  post: z.string(),
   image: z.string(),
-  introduction: z.string(),
+  descripation: z.string(),
 });
 
 export type PersonalFormType = z.infer<typeof PersonalSchema>;

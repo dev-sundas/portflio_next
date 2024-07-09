@@ -21,10 +21,17 @@ export default function PersonalForm({ }: Props) {
     const formdata = new FormData();
     formdata.append("name", data.name);
     formdata.append("image", data.image);
-    formdata.append("position", data.postion);
-    formdata.append("introduction", data.introduction);
-    const res = await postPersonalData(formdata);
+    formdata.append("post", data.post);
+    formdata.append("description", data.descripation);
+
+    try {
+      const res = await postPersonalData(formdata);
+      console.log("Response from server:", res);
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
   };
+
   return (
     <div>
       <Card className="rounded-none min-h-screen h-full">
@@ -53,7 +60,7 @@ export default function PersonalForm({ }: Props) {
               />
               <FormField
                 control={form.control}
-                name="postion"
+                name="post"
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
@@ -82,7 +89,7 @@ export default function PersonalForm({ }: Props) {
               />
               <FormField
                 control={form.control}
-                name="introduction"
+                name="descripation"
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
